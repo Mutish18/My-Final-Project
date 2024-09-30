@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Routine Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Gym Routine Tracker</h1>
+    </header>
+
+    <section id="gymWorkout">
+        <h2><i>Track Your Workout</h2></i>
+
+        <div class="form-container">
+            <!-- Add the picture next to the form -->
+            <img src="Workout4.jpg" alt="Workout Image" class="form-image">
+
+            <form id="exerciseForm">
+                <!-- Add Date Input -->
+                <label for="dateInput">Select Date:</label>
+                <input type="date" id="dateInput" required>
+
+                <label for="exerciseSelect">Select Exercise:</label>
+                <select id="exerciseSelect">
+                    <option value="arms">Arms</option>
+                    <option value="legs">Legs</option>
+                    <option value="back">Back</option>
+                    <option value="shoulders">Shoulders</option>
+                    <option value="abs">Abs</option>
+                    <option value="chest">Chest</option>
+                </select>
+
+                <label for="repsInput">Reps:</label>
+                <input type="number" id="repsInput" placeholder="Enter reps" min="1">
+
+                <label for="setsInput">Sets:</label>
+                <input type="number" id="setsInput" placeholder="Enter sets" min="1">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <!-- Clear Progress Button -->
+        <button onclick="clearProgress()">Clear Progress</button>
+
+        <div id="chartContainer" style="display: internal;">
+            <canvas id="exerciseChart" width="400" height="400"></canvas>
+        </div>
+    </section>
+
+    <section id="workoutTimetable">
+        <h2>Workout Timetable</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Exercise</th>
+                    <th>Reps</th>
+                    <th>Sets</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><i>
+                    <td>Monday</td>
+                    <td>Legs and Chest</td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>6:30 PM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Arms and Back</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>6:30 PM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Back and Legs</td>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>6:30 PM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Shoulders and Chest</td>
+                    <td>15</td>
+                    <td>3</td>
+                    <td>6:30 PM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Abs and Arms</td>
+                    <td>20</td>
+                    <td>4</td>
+                    <td>6:30 PM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Chest and Abs</td>
+                    <td>15</td>
+                    <td>5</td>
+                    <td>6:30 PM to 8:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Rest Day</td>
+                </tr></i>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <marquee><p>&copy; 2024 Fitness Tracker.<br> All Rights Reserved</p></marquee>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('Back 1.jpg');
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+        }
+
+        /* Container for left and right sections */
+        .container {
+            display: flex;
+            height: 100vh;
+            justify-content: space-between;
+        }
+
+        /* Left side - Title and description */
+        .left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            color: black;
+        }
+
+        .left-section h1 {
+            font-family: 'Times New Roman', Times, serif;
+            color: purple;
+            font-size: 5em;
+        }
+
+        .left-section p {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .panel h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .panel p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: orange;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-text {
+            padding: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left side with title and description -->
+        <div class="left-section">
+            <div class="panel">
+            <h1><b>Welcome to Evovle Fitness!</h1></b>
+            <p><i>Get fitness personalized stats tailored just for you.</p></i>
+        </div>
+        </div>
+
+        <!-- Right side with login and registration buttons -->
+        <div class="right-section">
+            <div class="panel">
+                <h2><i><u>About Us:</h2></i></u>
+                <p><i>At Evovle Fitness, we believe that fitness is a journey, not a destination. Our app is designed to help you track, measure, and improve your fitness goals with real-time data, personalized workout plans, and progress tracking. Whether you're working on building strength, losing weight, or maintaining a healthy lifestyle, we provide the tools you need to stay motivated and consistent.</p></i>
+                <button class="button" onclick="location.href='Registration/register.html'">Join Us Now!</button>
+
+
+            </div>
+        </div>
+    </div>
+
+        <marquee><b><i>2024 All Rights Reserved.</i></b></marquee>
+
+        <script src="script.js"></script>
+</body>
+</html>
+
+
+

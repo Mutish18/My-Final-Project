@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('Workout1.jpg') no-repeat center center fixed; /* Add your image URL here */
+    background-size: cover; /* Ensures the image covers the entire page */
+}
+
+header, section, footer {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background-color: rgba(2, 9, 17, 0.8); /* Slightly transparent background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    max-width: 800px; /* Increase section width for better layout */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Align the form and image container */
+.form-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; /* Ensures space between image and form */
+    gap: 20px;
+}
+
+.form-image {
+    width: 520px; /* Adjust the image size */
+    margin-right: 70px;
+    opacity: 0;
+    transform: translateX(-100px); /* Start offscreen */
+    transition: opacity 1s ease, transform 1s ease; /* Smooth transition effect */
+}
+
+.form-container:hover .form-image {
+    opacity: 1;
+    transform: translateX(0); /* Bring image into view on hover */
+}
+
+/* Styling for the form */
+#exerciseForm {
+    display: block;
+    text-align: left;
+    max-width: 400px; /* Adjusted width to better fit next to image */
+    margin: 0; /* Aligned to the left */
+    padding: 10px;
+}
+
+#exerciseForm label {
+    display: block;
+    margin-top: 10px;
+}
+
+#exerciseForm input, #exerciseForm select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#exerciseForm button {
+    width: auto; /* Natural button size */
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#exerciseForm button:hover {
+    background-color: #218838;
+}
+
+/* Clear progress button */
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: rgba(2, 13, 24, 0.8); /* Slightly transparent footer background */
+    color: white;
+}
+
+#chartContainer {
+    margin-top: 20px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles for the timetable */
+#workoutTimetable {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ced813;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+

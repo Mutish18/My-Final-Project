@@ -1,0 +1,82 @@
+/* Apply a background image to the body */
+body {
+    background-image: url('Beach.jpg'); /* Replace with your actual image URL */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the background image */
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(2, 9, 17, 0.8); /* Slightly transparent background */
+    color: rgb(243, 236, 236);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Flexbox styling for titles */
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    color: #120101; /* Title color */
+}
+
+/* Style tables */
+table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Remove space between cells */
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 3D effect */
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px;
+    color: #0b0000; /* Caption color */
+}
+
+/* Header cells */
+th {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+    padding: 10px;
+    border-bottom: 2px solid #ddd; /* Bottom border for header */
+}
+
+/* Data cells */
+td {
+    background-color: #f9f9f9; /* Light background for data cells */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Bottom border for data cells */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: #f1f1f1; /* Change background on hover */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    
+    h1, h2 {
+        font-size: 1.5em; /* Smaller font size on smaller screens */
+    }
+    
+    table {
+        font-size: 0.9em; /* Smaller font size for table on smaller screens */
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: rgba(2, 13, 24, 0.8); /* Slightly transparent footer background */
+    color: white;
+}

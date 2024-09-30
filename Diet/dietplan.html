@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h2><i>My Weekly Diet Plan</i></h2>
+    </header>
+
+    <section id="dietTimetable">
+        <h2>Diet Timetable:</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Carbohydrates( one of each meal)</th>
+                    <th>Proteins( one of each meal)</th>
+                    <th>Vitamins( one of each meal)</th>
+                    <th>Recommended Additions( one of each meal)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Mandazi, White Ugali</td>
+                    <td>Ndengu (Green grams), Nyama Choma</td>
+                    <td>Fruit Salad, Sukuma Wiki</td>
+                    <td>Start the day with a fruit-rich breakfast. Drink water or tea.</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Chapati, Sweet Potato, Githeri</td>
+                    <td>Tilapia, Beans </td>
+                    <td>Kachumbari, Mango Juice</td>
+                    <td>Include fresh cucumber and carrot sticks for a light snack.</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Nduma (Arrowroot), Rice </td>
+                    <td>Nyama, Ndengu</td>
+                    <td>Mchicha, Orange Slices</td>
+                    <td>Stay hydrated with coconut water or lemon water in the evening.</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>Githeri, Chapati, Sweet Potato</td>
+                    <td>Grilled Tilapia, Eggs</td>
+                    <td>Passion Fruit Juice, Sukuma Wiki</td>
+                    <td>Add fresh salad or kachumbari to lunch for fiber and vitamins.</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td> Nduma, Brown Ugali</td>
+                    <td>Ndengu, Nyama Choma</td>
+                    <td>Fruit Salad, Orange Juice</td>
+                    <td>Drink a mix of fresh juices or herbal teas to boost hydration.</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>Rice, Githeri, Sweet Potato</td>
+                    <td>Grilled Tilapia </td>
+                    <td>Mchicha, Kachumbari</td>
+                    <td>Include mid-morning fruit and vegetable snacks for vitamins.</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>Ugali, Githeri, Nduma</td>
+                    <td>Nyama Choma </td>
+                    <td>Passion Fruit Juice, Sukuma Wiki</td>
+                    <td>Have a light dinner with fish and vegetables to wind down the day.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="dietracker">
+        <h2><i>Track Your Diet:</i></h2>
+        
+        <div class="form-container">
+            <img src="Diet7.jpg" alt="Workout Image" class="form-image">
+
+            <form id="dietForm">
+                <label for="dateInput">Select Date:</label>
+                <input type="date" id="dateInput" required>
+                <br>
+
+                <label for="carbohydratesInput">Carbohydrates (grams):</label>
+                <input type="number" id="carbohydratesInput" data-category="carbohydrates" required>
+                <br>
+
+                <label for="proteinsInput">Proteins (grams):</label>
+                <input type="number" id="proteinsInput" data-category="proteins" required>
+                <br>
+
+                <label for="vitaminsInput">Vitamins (grams):</label>
+                <input type="number" id="vitaminsInput" data-category="vitamins" required>
+                <br>
+
+                <label for="waterInput">Water (liters):</label>
+                <input type="number" id="waterInput" data-category="water" required>
+                <br>
+
+                <label for="supplementsInput">Other Supplements (grams):</label>
+                <input type="number" id="supplementsInput" data-category="othersupplements" required>
+                <br>
+
+                <button type="submit">Add Diet</button>
+            </form>
+        </div>
+
+        <button onclick="clearProgress()">Clear Progress</button>
+
+        <div id="chartContainer">
+            <canvas id="dietPieChart" width="400" height="400"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <marquee><p>&copy; 2024 Fitness Tracker.<br> All Rights Reserved</p></marquee>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

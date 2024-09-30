@@ -1,0 +1,268 @@
+/* General styles */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+#header {
+    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for better contrast */
+    padding: 20px 40px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -100px; /* Overlap background image with header */
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust the logo size as needed */
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+#nav a.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+}
+
+#nav a.nav-link:hover {
+    color: #ff0; /* Yellow color on hover */
+}
+
+.social-networks {
+    display: flex;
+    align-items: center;
+}
+
+.social-networks a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-networks a:hover {
+    color: #ff0; /* Yellow color on hover */
+}
+
+/* Visual section styles */
+.visual {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual .bg-stretch {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place image behind the text */
+}
+
+.text-block {
+    text-align: center;
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.text-block h1 {
+    font-size: 70px; /* Increased font size */
+    color: #fff;
+    margin: 0;
+}
+
+.text-block .tagline {
+    font-size: 50px; /* Increased font size */
+    color: #ff0; /* Yellow color for tagline */
+}
+
+.text-block .info {
+    font-size: 30px; /* Increased font size */
+    color: #ff0; /* Yellow color for info text */
+}
+
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px; /* Adjust spacing from bottom */
+    width: 100%;
+    z-index: 1;
+}
+
+.cta-wrapper .btn {
+    font-size: 18px;
+    padding: 12px 25px;
+    background-color: #27ae60;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.cta-wrapper .btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Features section styles */
+.Features {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.titlepage h2 {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.titlepage span {
+    font-size: 22px;
+    color: #777;
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Flexbox for the feature boxes */
+.feature-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Style the links to fill the flex box */
+.Our_box {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px;
+    flex-basis: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: block; /* Ensure the entire box is clickable */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit text color from parent */
+}
+
+/* Styling for the third box (Weight Loss) */
+.Our_box:nth-child(3) {
+    flex-basis: 80%; /* Increase the width of the third box */
+    padding: 70px; /* Increase the padding to make the box bigger */
+}
+
+.Our_box:hover {
+    transform: translateY(-10px);
+}
+
+.Our_box img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.Our_box h4 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Read More button styles */
+.read_more_box {
+    display: flex;
+    justify-content: center; /* Center the button */
+    align-items: center; /* Center vertically */
+    margin-top: 30px; /* Space above the box */
+}
+
+.read_more {
+    padding: 12px 25px;
+    background-color: #27ae60;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.read_more:hover {
+    background-color: #2ecc71;
+}
+
+/* Instagram link styles */
+a {
+    color: #E1306C; /* Instagram color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold; /* Makes the text bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    #nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #nav a {
+        margin: 10px 0;
+    }
+
+    .social-networks {
+        margin-top: 10px;
+    }
+
+    .social-networks a {
+        margin: 0 5px;
+    }
+
+    .feature-boxes {
+        flex-direction: column;
+    }
+
+    .Our_box {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+
+    .read_more {
+        margin-top: 20px; /* Adjust space for mobile view */
+    }
+}
+
+
+
+
+
+
